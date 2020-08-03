@@ -15,6 +15,8 @@
 		D37517DC24D44D0D00CFC4CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37517DA24D44D0D00CFC4CF /* LaunchScreen.storyboard */; };
 		D37517E724D44D0E00CFC4CF /* Game_of_LifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37517E624D44D0E00CFC4CF /* Game_of_LifeTests.swift */; };
 		D37517F224D44D0E00CFC4CF /* Game_of_LifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37517F124D44D0E00CFC4CF /* Game_of_LifeUITests.swift */; };
+		D38E3B9924D53D9100A79440 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E3B9824D53D9100A79440 /* Cell.swift */; };
+		D38E3B9E24D6846900A79440 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E3B9D24D6846900A79440 /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D37517ED24D44D0E00CFC4CF /* Game of LifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game of LifeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37517F124D44D0E00CFC4CF /* Game_of_LifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_of_LifeUITests.swift; sourceTree = "<group>"; };
 		D37517F324D44D0E00CFC4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D38E3B9824D53D9100A79440 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		D38E3B9D24D6846900A79440 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,9 @@
 			children = (
 				D37517CF24D44D0900CFC4CF /* AppDelegate.swift */,
 				D37517D124D44D0900CFC4CF /* SceneDelegate.swift */,
-				D37517D324D44D0900CFC4CF /* ViewController.swift */,
-				D37517D524D44D0900CFC4CF /* Main.storyboard */,
+				D38E3B9C24D55FA900A79440 /* Model */,
+				D38E3B9B24D55F9800A79440 /* View */,
+				D38E3B9A24D55F8200A79440 /* Controller */,
 				D37517D824D44D0D00CFC4CF /* Assets.xcassets */,
 				D37517DA24D44D0D00CFC4CF /* LaunchScreen.storyboard */,
 				D37517DD24D44D0D00CFC4CF /* Info.plist */,
@@ -126,6 +131,31 @@
 				D37517F324D44D0E00CFC4CF /* Info.plist */,
 			);
 			path = "Game of LifeUITests";
+			sourceTree = "<group>";
+		};
+		D38E3B9A24D55F8200A79440 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D37517D324D44D0900CFC4CF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D38E3B9B24D55F9800A79440 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D37517D524D44D0900CFC4CF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D38E3B9C24D55FA900A79440 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D38E3B9824D53D9100A79440 /* Cell.swift */,
+				D38E3B9D24D6846900A79440 /* UIButtonExtension.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D37517D424D44D0900CFC4CF /* ViewController.swift in Sources */,
+				D38E3B9E24D6846900A79440 /* UIButtonExtension.swift in Sources */,
+				D38E3B9924D53D9100A79440 /* Cell.swift in Sources */,
 				D37517D024D44D0900CFC4CF /* AppDelegate.swift in Sources */,
 				D37517D224D44D0900CFC4CF /* SceneDelegate.swift in Sources */,
 			);
